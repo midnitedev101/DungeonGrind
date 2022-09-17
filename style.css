@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+body {
+  font-family: "Press Start 2P", cursive;
+  background-color: #1d1f20;
+  overflow: -moz-scrollbars-none; }
+
+body::-webkit-scrollbar {
+  display: none;
+  overflow: hidden; }
+
+#grid_container {
+  display: grid;
+  text-align: center; }
+
+.gridElement {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  padding: 1px;
+  margin: 1px;
+  outline: 2px solid black;
+  background-image: url("./assets/images/tile_8.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+.gridElement.player {
+  position: static; }
+
+#grid {
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 0; }
+
+#battle_ui {
+  display: inline-flex;
+  position: fixed;
+  vertical-align: top;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  flex-direction: column; }
+
+#battle_ui_screen {
+  width: 100%;
+  height: auto;
+  background: url("./assets/images/bulkhead-walls-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px 25px 0px 0px;
+  border: 4px solid red;
+  border-bottom: none;
+  border-top-right-radius: 25px;
+  border-top-right-radius: 25px; }
+
+#battle_ui_screen > div {
+  color: white;
+  font-size: 1vw;
+  padding: 5%;
+  letter-spacing: 0.25vw;
+  line-height: 1.5vw; }
+
+#battle_ui_log {
+  width: 100%;
+  height: auto;
+  background: black;
+  border-radius: 0px 0px 25px 25px;
+  border: 4px solid red;
+  border-top: none;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden; }
+
+#battle_ui_span {
+  color: white;
+  white-space: pre-line;
+  float: left;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 1vw;
+  overflow: hidden; }
+
+.typewriter-cursor {
+  display: none; }
+
+.bui_span_p {
+  opacity: 0.25;
+  font-size: 1vw; }
+
+.bui_span_p:last-child {
+  color: orange !important;
+  animation: blinker 1s linear infinite; }
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5; } }
+.battle_sc_char {
+  padding-top: 20%;
+  width: 33%;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.5s;
+  padding-bottom: 10%; }
+
+.battle_sc_char:hover {
+  -webkit-transform: scale(1.5) translate(0, -20%);
+  -ms-transform: scale(1.5) translate(0, -20%);
+  transform: scale(1.5) translate(0, -20%); }
+
+#battle_sc_span {
+  width: 100%;
+  display: inline-flex;
+  font-size: 1vw; }
+
+.gm_info {
+  color: white;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%; }
+
+.gm_info {
+  color: white;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%; }
+
+.gm_header {
+  display: inline-flex;
+  text-align: center;
+  font-size: 1vw;
+  padding-top: 5%;
+  color: white; }
+
+.gm_subInfo {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  padding-top: 5%;
+  padding-left: 10%;
+  width: 35%; }
+
+#player_intro_span {
+  color: white;
+  font-size: 1vw;
+  text-align: left;
+  padding: 2%;
+  float: left; }
+
+#charRender {
+  height: 6.5vw;
+  padding-top: 6.5vw; }
+
+/*# sourceMappingURL=style.css.map */
